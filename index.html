@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- Main Parent Container -->
+    <div id="container"
+        class="main-parent-container bg-green-200 h-screen flex items-center justify-center min-w-[320px]">
+
+        <!-- Calculator Container -->
+        <div class="calculator-container rounded-2xl bg-black w-[250px] h-[400px] p-5 min-w-[250px] flex flex-col items-center justify-end"
+            id="calculatorContainer">
+
+            <!-- Input Container Inside Calculator Container -->
+            <div class="input-container w-full mb-4 pr-4" id="inputContainer">
+
+                <!-- Input Box Inside Input Container -->
+                <input type="text" value="0" id="inputBox"
+                    class="input-box w-full text-4xl text-right mx-auto bg-transparent outline-none text-white" />
+            </div>
+
+            <!-- Button Container -->
+            <div class="buttons-container w-full flex flex-wrap gap-3 justify-center" id="buttons-container">
+                <!-- Individual Buttons Inside Button Container -->
+                <button class="btn bg-[#9F9F9F] text-black font-semibold w-10 h-10 rounded-full" id="btnAc">AC</button>
+
+                <button class="btn bg-[#9F9F9F] text-black w-10 h-10 font-semibold rounded-full" id="btnPlusMinus">
+                    +/-
+                </button>
+
+                <button class="btn bg-[#9F9F9F] text-black font-semibold w-10 h-10 rounded-full" id="btnModulous">
+                    %
+                </button>
+
+                <button class="btn bg-[#F69906] text-white font-semibold text-xl w-10 h-10 rounded-full"
+                    id="btnDivide">/</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn7">7</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn8">8</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn9">9</button>
+                <button class="btn bg-[#F69906] text-white font-semibold w-10 h-10 text-xl rounded-full"
+                    id="btnMultiply">*</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn4">4</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn5">5</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn6">6</button>
+                <button class="btn bg-[#F69906] text-xl text-white font-semibold w-10 h-10 rounded-full"
+                    id="btnMinus">-</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn1">1</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn2">2</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btn3">3</button>
+                <button class="btn bg-[#F69906] text-xl text-white font-semibold w-10 h-10 rounded-full"
+                    id="btnPlus">+</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full grow"
+                    id="btn0">0</button>
+                <button class="btn bg-[#313131] text-white font-semibold w-10 h-10 rounded-full" id="btnDot">.</button>
+                <button class="btn bg-[#F69906] text-xl text-white font-semibold w-10 h-10 rounded-full mr-2"
+                    id="btnEqual">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
